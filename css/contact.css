@@ -1,0 +1,211 @@
+main {
+	text-align: center;
+	color: #900;
+}
+h1 {
+	margin-top: 50px;
+}
+.tips {
+	margin-top: 50px;
+	color: black;
+}
+.tips:after {
+	content:'';
+	display: block;
+	width: 54%;
+	height: 0;
+	margin-top: 10px;
+	margin-left: 23%;
+	border-bottom: 1px solid gray;
+}
+
+/*表单填写区域*/
+form {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	text-align: left;
+}
+.info {
+	float: left;
+	width: 45%;
+	height: auto;
+}
+.info p {
+	padding-left: 10px;
+}
+.wrap {
+	width:100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+label {
+	width: 100%;
+	line-height: 40px;
+	font-size: 1.2rem;
+}
+input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 5px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	outline: none;
+}
+.suggestion {
+	float: right;
+	width: 45%;
+	height: auto;
+}
+.suggestion p {
+	line-height: 40px;
+	font-size: 1.2rem;
+	margin-bottom: 0;
+}
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+	height: 225px;
+	resize: none;
+	border: 1px solid gray;
+	border-radius: 5px;
+	outline: none;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+#submit {
+	width: 200px;
+	height: 50px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	color: #fff;
+	background-color: #900;
+	cursor: pointer;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+#submit:hover {
+	background-color: #700;
+	border: 1px solid #900;
+	width: 250px;
+}
+.submit {
+	float: left;
+	text-align: center;
+	height: 55px;
+}
+
+/*团队地址*/
+.map {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 80px 0;
+	padding: 100px 0;
+	background-color: #333;
+}
+.addr {
+	opacity: 0;
+	z-index: 1;
+	position: absolute;
+	top: 57%;
+	left: 50%;
+	width: 350px;
+	height: 170px;
+	line-height: 30px;
+	border: 1px solid #900;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	background-color: #fff;
+	-webkit-transition: all .8s;
+	-o-transition: all .8s;
+	transition: all .8s;
+}
+.map:hover>.addr {
+	opacity: 1;
+}
+/*方框左边的小三角*/
+.addr:before,
+.addr:after {
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	content: '';
+}
+.addr:before {
+	top: 0;
+	left: -32px;
+	border: 16px solid transparent;
+	border-right-color: #900;
+}
+.addr:after {
+	top: 1px;
+	left: -30px;
+	border: 15px solid transparent;
+	border-right-color: #fff;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+	form {
+		width: 60%;
+	}
+	.tips {
+		font-size: .8em;
+	}
+	.tips:after {
+		width: 64%;
+		margin-left: 18%;
+	}
+}
+@media screen and (max-width: 767px) {
+	main {
+		padding-top: 65px;
+	}
+	h1 {
+		margin-top: 30px;
+		font-size: 1.5em;
+	}
+	form {
+		width: 75%;
+	}
+	.tips {
+		margin-top: 30px;
+		font-size: .7em;
+		padding: 0 20px;
+	}
+	.tips:after {
+		width: 84%;
+		margin-left: 8%;
+	}
+	.info,
+	.suggestion {
+		width: 100%;
+		float: none;
+	}
+	label {
+		width: 15%;
+		line-height: 30px;
+		margin-right: 5%;
+		font-size: 1rem;
+	}
+	input {
+		width: 80%;
+		height: 30px;
+		line-height: 30px;
+	}
+	.suggestion p {
+		font-size: 1rem;
+	}
+	.map {
+		margin: 30px 0;
+		padding: 30px 0;
+	}
+	.addr {
+		display: none;
+	}
+}

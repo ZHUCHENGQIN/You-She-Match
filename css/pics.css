@@ -1,0 +1,114 @@
+.opt {
+	z-index: 10;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	margin: 20px 0 0 20px;
+	font-size: 1.5rem;
+	line-height: 100px;
+	text-align: center;
+	border: 1px solid #5C7FAA;
+	border-radius: 100px;
+	color: #fff;
+	background-color: #2C4360;
+	box-shadow: 0px 0px 25px #000;
+	cursor: pointer;
+}
+.opt div {
+	width: 50%;
+}
+
+/*瀑布流*/
+.container{
+    padding-top: 50px;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+ /*   -webkit-column-width:25%;
+    -moz-column-width:25%; */
+}
+.container .img-wrap{
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width:350px;
+	height: 350px;
+    margin: 20px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 15px #ccc;
+}
+.container .img-wrap img {
+	width: 100%;
+	height: 250px;
+	vertical-align: middle;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+.container .img-wrap .describe {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #f5f5f5;
+	overflow: hidden;
+	transition: all .5s;
+}
+.container .img-wrap .describe:hover {
+	height: 340px;
+	color: white;
+	background-color: rgba(0, 0, 0, .8);
+}
+.img-wrap .describe h3{
+	color: #900;
+}
+h3 {
+	margin-top: 0;
+	padding-top: 15px;
+}
+
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, .8);
+}
+.mask img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 850px;
+	height: 500px;
+	border: 1px solid white;
+	box-shadow: 0 0 10px black;
+	-webkit-transform: translate(-425px, -250px);
+	-ms-transform: translate(-425px, -250px);
+	-o-transform: translate(-425px, -250px);
+	transform: translate(-425px, -250px);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+	main{
+		padding-top: 65px;
+	}
+	.container{
+		width: 900px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main{
+		padding-top: 0;
+	}
+	.container{
+		width: 500px;
+	}
+	.opt {
+		display: none;
+	}
+}

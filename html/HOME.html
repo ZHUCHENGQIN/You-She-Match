@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- 关键词 -->
+	<meta name="keywords" content="social welfare">
+	<meta name="author" content="咸鱼翻身">
+	<title>HOME</title>
+	<link rel="icon" type="image/x-icon" href="../images/home/title.ico">
+	<link rel="stylesheet" type="text/css" href="../css/style.css"> <!-- 基本的复用样式表 -->
+	<link rel="stylesheet" type="text/css" href="../css/activity.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script type="text/javascript" src="../script/jquery-3.1.1.min.js"></script> <!-- 必须先引入jQuery，否则其他代码报错 -->
+	<script type="text/javascript" src="../script/multiplex.js"></script> <!-- 各页面复用脚本：移动端导航栏/底部计时器 -->
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav>
+		<a href="HOME.html"><img src="../images/logo.png"></a>
+		<ul>
+			<a href="home.html"><li class="active">
+				<div class="nav-icon nav-icon-home"></div>
+				<p>主页</p>
+			</li></a>
+			<a href="activity.html"><li>
+				<div class="nav-icon nav-icon-activity"></div>
+				<p>活动</p>
+			</li></a>
+			<a href="pics.html"><li>
+				<div class="nav-icon nav-icon-pics"></div>
+				<p>照片</p>
+			</li></a>
+			<a href="recruit.html"><li>
+				<div class="nav-icon nav-icon-recruit"></div>
+				<p>招募</p>
+			</li></a>
+			<a href="about.html"><li>
+				<div class="nav-icon nav-icon-about"></div>
+				<p>关于我们</p>
+			</li></a>
+			<a href="contact.html"><li>
+				<div class="nav-icon nav-icon-contact"></div>
+				<p>联系我们</p>
+			</li></a>
+		</ul>
+		<div class="search-box">
+			<input type="search" name="search">
+			<img src="../icon/search.png">
+		</div>
+		<img src="../images/home/icon-item.png" class="click-to-show">
+	</nav>
+
+	<!-- 图片轮播 -->
+	<header class="carousel">
+		<div class="img-list">
+			<img src="../images/home/turn1.jpg" alt="turn1">
+			<img src="../images/home/turn2.jpg" alt="turn2">
+			<img src="../images/home/turn.jpg" alt="turn3">
+			<img src="../images/home/turn1.jpg" alt="turn1">
+		</div>
+		<div class="circles">
+			<span data-idx="1" class="on"></span>
+			<span data-idx="2"></span>
+			<span data-idx="3"></span>
+		</div>
+		<a href="#" id="prev" class="arrow">&lt;</a>
+		<a href="#" id="next" class="arrow">&gt;</a>
+		<img src="../images/home/slogan.png" id="slogan">
+	</header>
+
+	<!-- 分类展示 -->
+	<main>
+		<!-- 发起呼吁 -->
+		<header class="call-on">
+			<h2>WELCOME HOME</h2>
+			<p><strong class="red">公益</strong>是个人或组织自愿通过做好事、行善举而提供给社会公众的公共产品。 </p>
+			<p>在这里，做好事、行善举是对个人或组织行为的价值判断；行动的结果是向非特定的社会成员提供公益产品。</p>
+			<p class="red">你可以通过下列方式加入公益行列，为他人提供帮助。</p>
+		</header>
+		<!-- 分类展示活动 -->
+		<h3 class="line-between">公益活动</h3>
+		<div class="activities">
+			<div class="wrap wrap1">
+				<img src="../images/activity/teach.jpg">
+				<div class="desc">
+					<img src="../images/activity/teach.png" alt="teach_title" class="title">
+					<p>教育是人类永远的话题，然而贫困地区的孩子还常常为上学的事情发愁，所以作为一名大学生，支教无疑是一个非常棒的选择，不仅可以锻炼自己的能力，也能为当地的孩子带来欢乐与知识，为自己的人生旅途添上浓墨重彩的一笔。</p>
+					<div class="links">
+						<a href="recruit.html"><button>加入 / 招募</button></a>
+						<a href="support-education.html"><button>活动详情</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="wrap wrap2">
+				<div class="desc">
+					<img src="../images/activity/give.png" alt="give_title" class="title">
+					<p>如果说忙于学业而无法为孩子们提供教育帮助，那么我想说捐助也是最广泛最常见的公益活动。你不需要付出许多精力，仅仅只是奉献出你不需要的东西，书籍，衣物或者其他生活用品，就可以帮助到哪些需要帮助的人，举手之劳，何乐不为？</p>
+					<div class="links">
+						<a href="recruit.html"><button>加入 / 招募</button></a>
+						<a href="collection.html"><button>活动详情</button></a>
+					</div>
+				</div>
+				<img src="../images/activity/mujuan.jpg">
+			</div>
+			<div class="wrap wrap3">
+				<img src="../images/activity/old.jpg">
+				<div class="desc">
+					<img src="../images/activity/old.png" alt="old_title" class="title">
+					<p>正所谓幼吾幼以及人之幼，老吾老以及人之老。我们尽力为孩子们提供帮助，可也不能忘记了哪些孤寡老人，劳累一生，本该安享晚年，却要在敬老院忍受孤独。人啊，终究是要老去的，没人希望自己将来一个人在敬老院中孤独终老，所以，趁着放假，拜访一下敬老院，再给父母打一个电话，有何不可？</p>
+					<div class="links">
+						<a href="recruit.html"><button>加入 / 招募</button></a>
+						<a href="visit-the-elderly.html"><button>活动详情</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 新闻 公益活动 -->
+		<h3 class="line-between">往期精彩</h3>
+		<div class="news clearfix">
+			<div class="package left">
+				<span><img src="../images/home/item.png"></span>
+				<img src="../images/home/newest.png" alt="融城计划">
+				<div class="content">
+					<h4>你的微笑，由我守护<br>融城计划再启航</h4>
+					<p>2017年3月22日上午十点，望城坡街道校地共建签约、授牌仪式在岳麓区望城坡街道办事处顺利举行。湖南大学团委副书记，岳麓区团委书记，望城坡街道党工委副书记、办事处主任，望城坡街道党工委副书记，湖南大学青志协代表均到场出席了此次会议。</p>
+				</div>
+			</div>
+			<div class="package right">
+				<span><img src="../images/home/item.png"></span>
+				<img src="../images/home/lately1.jpg">
+				<div class="content">
+					<h4>湖南大学彩虹助学协会<br>暑期支教</h4>
+					<p>7月中旬，湖南大学彩虹助学协会143名志愿者陆续出发，分赴怀化、郴州、麻阳、凤凰、益阳等市州12个支教点，开始为期15天的暑期支教之旅，为贫困山区的留守儿童带去知识和关爱。</p>
+				</div>
+			</div>
+			<div class="package left">
+				<span><img src="../images/home/item.png"></span>
+				<img src="../images/home/lately2.jpg">
+				<div class="content">
+					<h4>情牵夕阳<br>奏响冬日暖歌</h4>
+					<p>2015年12月5日，湖南大学信息科学与工程学院同学在院青协干事的带领下前往长沙市第一福利院探望老人，延续着送温暖行动，给老人们送去了问候与关怀。</p>
+				</div>
+			</div>
+			<div class="package right">
+				<span><img src="../images/home/item.png"></span>
+				<img src="../images/home/lately3.PNG">
+				<div class="content">
+					<h4>团员少先队员手拉手<br>共筑乡村少年未来梦</h4>
+					<p>十一月十八日下午，幕天筹书活动由大学青年志愿者协会主办，广州幕天公益组织与湖南大学子弟小学合作展开，共同向学校捐助图书的活动。</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<!-- 版权信息+底部导航 ——圣杯布局-->
+		<footer>
+			<p>—— 网站已经运行 ——</p>
+			<!-- 环形计数器 -->
+			<div class="timer clearfix">
+				<!-- 日 -->
+				<div class="game_time game_time1">
+					<div class="hold">
+						<div class="pie pie1"></div>
+					</div>
+					<div class="hold">
+						<div class="pie pie2"></div>
+					</div>
+					<div class="bg bg1"> </div>
+					<div class="time"><p class="num"></p><p>Days</p></div>
+				</div>
+				<!-- 时 -->
+				<div class="game_time game_time2">
+					<div class="hold">
+						<div class="pie pie1"></div>
+					</div>
+					<div class="hold">
+						<div class="pie pie2"></div>
+					</div>
+					<div class="bg bg2"> </div>
+					<div class="time"><p class="num"></p><p>Hours</p></div>
+				</div>
+				<!-- 分 -->
+				<div class="game_time game_time3">
+					<div class="hold">
+						<div class="pie pie1"></div>
+					</div>
+					<div class="hold">
+						<div class="pie pie2"></div>
+					</div>
+					<div class="bg bg3"> </div>
+					<div class="time"><p class="num"></p><p>Minutes</p></div>
+				</div>
+				<!-- 秒 -->
+				<div class="game_time game_time4">
+					<div class="hold">
+						<div class="pie pie1"></div>
+					</div>
+					<div class="hold">
+						<div class="pie pie2"></div>
+					</div>
+					<div class="bg bg4"> </div>
+					<div class="time"><p class="num"></p><p>Seconds</p></div>
+				</div>
+			</div>
+			<p class="copyright">© 2017 Charity. All rights reserved | Design by <a href="about.html">咸鱼翻身</a></p>
+		</footer>
+	<script type="text/javascript" src="../script/home.js"></script>
+
+</body>
+</html>

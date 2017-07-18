@@ -1,0 +1,84 @@
+.activity-details {
+	background-color: #eee;
+}
+.activity-details header {
+	width: 100%;
+	height: 200px;
+}
+/*支教*/
+.support-education header{
+	background-color: #f3abaf;
+	/*background-image: -webkit-radial-gradient(ellipse at center bottom,rgb(220, 75, 200),rgb(0, 0, 75))*/
+}
+
+/*募捐*/
+.collection header{
+	background-color: #de1b23;
+}
+
+/*慰问老人*/
+.visit-the-elderly header{
+	background-color: #e3b34f;
+}
+
+.activity-details .wrap {
+	width: 1000px;
+	height: auto;
+	margin: -100px auto 0 auto;
+	padding: 30px 50px;
+	background-color: #fff;
+}
+.activity-details .wrap p:not([class='publish-time']) {
+	text-indent: 2em;
+}
+.activity-details .wrap .publish-time {
+	margin: 30px 0 10px 0;
+	font-size: .8em;
+	color: #666;
+}
+.activity-details .wrap hr {
+	margin-bottom: 30px;
+}
+.activity-details .wrap img {
+	width: 600px;
+	height: auto;
+	margin: 10px 0 0 200px;
+}
+/*此类为js动态添加*/
+.activity-details .wrap .alt-text {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	font-size: .8em;
+	color: #666;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+	.activity-details .wrap {
+		width: 700px;
+	}
+	.activity-details .wrap img {
+		width: 400px;
+		margin: 10px 0 0 150px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main {
+		padding-top: 65px;
+	}
+	.activity-details header {
+		height: 100px;
+	}
+	.activity-details .wrap{
+		width: 300px;
+		padding: 20px;
+		margin: -50px auto 0 auto;
+	}
+	.activity-details .wrap img {
+		width: 200px;
+		margin: 10px 0 0 50px;
+	}
+	.activity-details .wrap h2 {
+		font-size: 1em;
+	}
+}

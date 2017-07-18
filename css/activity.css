@@ -1,0 +1,89 @@
+/*主页公益活动部分和活动页共用样式表*/
+
+main {
+	/*width: 1000px;*/
+}
+.wrap {
+	width: 100%;
+	height: 650px;
+	overflow: hidden;
+	/*margin: 100px auto;*/
+}
+.wrap1 {
+	/*background: #000 url('../images/activity/hope.jpg') no-repeat;*/
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.wrap>img,
+.wrap .desc {
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	float: left;
+}
+.wrap .desc {
+	padding: 50px;
+	text-align: center;
+}
+.wrap .desc img {
+	margin: 20px auto;
+}
+.wrap .desc p {
+	font-size: 1.5em;
+}
+.wrap1 .desc p  {
+	color: #f3abaf;
+}
+.wrap2 .desc p  {
+	color: #de1b23;
+}
+.wrap3 .desc p  {
+	color: #e3b34f;
+}
+.wrap .desc button {
+	padding: 10px 20px;
+	margin: 30px auto;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.wrap1 .desc button {
+	background-color: #f3abaf;
+}
+.wrap2 .desc button {
+	color: white;
+	background-color: #de1b23;
+}
+.wrap3 .desc button {
+	background-color: #e3b34f;
+}
+
+/*sm设备：小屏幕-平板*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.wrap .desc img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/*xs设备：手机*/
+@media screen and (max-width: 767px) {
+	main {
+		padding-top: 65px;
+	}
+	.wrap>img,
+	.wrap .desc {
+	  	width: 100%;
+	  	height: 50%;
+	  	box-sizing: border-box;
+	  	overflow: hidden;
+		border: 1px solid #ccc;
+	}
+	.wrap .desc p {
+		display: none;
+	}
+	.wrap .desc img {
+		width: 100%;
+		height: 100%;
+	}
+}
